@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="0" name="WrapperTest" package="org.gradle.api.tasks.wrapper" tests="23" time="4.902" timestamp="2010-08-20T06:54:37">
+      <properties />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testWrapper" time="2.37" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testExecuteWithNonExistingWrapperJarParentDir" time="0.513" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testCheckInputs" time="0.023" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testExecuteWithExistingWrapperJarParentDirAndExistingWrapperJar" time="0.105" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testTask" time="0.015" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testPath" time="0.935" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testDependsOn" time="0.045" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testToString" time="0.015" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testDoFirst" time="0.023" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testDoLast" time="0.017" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testDeleteAllActions" time="0.018" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testAddActionWithNull" time="0.022" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testAddActionsWithClosures" time="0.037" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testExecuteDelegatesToTaskExecuter" time="0.024" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testConfigure" time="0.04" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="disableStandardOutCapture" time="0.013" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="captureStandardOut" time="0.012" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="setGetDescription" time="0.013" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="canSpecifyOnlyIfPredicateUsingClosure" time="0.116" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="canSpecifyOnlyIfPredicateUsingSpec" time="0.024" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="onlyIfPredicateIsTrueWhenTaskIsEnabledAndAllPredicatesAreTrue" time="0.02" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="canReplaceOnlyIfSpec" time="0.033" />
+
+      <testcase classname="org.gradle.api.tasks.wrapper.WrapperTest" name="testDependentTaskDidWork" time="0.071" />
+
+      <system-out><![CDATA[23:54:40.083 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.SkipTaskExecuter - Starting to execute task ':taskname'
+23:54:40.091 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.t.ExecutionShortCircuitTaskExecuter - Determining if task ':taskname' is up-to-date
+23:54:40.117 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] INFO  o.g.a.i.c.DefaultTaskArtifactStateRepository - Executing task ':taskname' due to:
+Task ':taskname' has not declared any outputs.
+23:54:40.117 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.t.ExecutionShortCircuitTaskExecuter - task ':taskname' is not up-to-date
+23:54:40.118 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.DefaultTaskExecuter - Executing actions for task ':taskname'.
+23:54:40.142 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.SkipTaskExecuter - Finished executing task ':taskname'
+23:54:40.398 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Adding reference: ant.PropertyHelper
+23:54:40.400 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Detected Java version: 1.6 in: /System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+23:54:40.401 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Detected OS: Mac OS X
+23:54:40.419 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Adding reference: ant.ComponentHelper
+23:54:40.457 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Project base dir set to: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper
+23:54:40.460 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] INFO  o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] Expanding: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/AbstractTaskTest/unknown-test26/jarPath/gradle-wrapper.jar into /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar
+23:54:40.475 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/IDownload.class
+23:54:40.476 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/IDownload.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/IDownload.class
+23:54:40.481 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/BootstrapMainStarter.class
+23:54:40.482 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/BootstrapMainStarter.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/BootstrapMainStarter.class
+23:54:40.483 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/
+23:54:40.495 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org
+23:54:40.497 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Download.class
+23:54:40.498 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Download.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/Download.class
+23:54:40.499 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Install.class
+23:54:40.499 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Install.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/Install.class
+23:54:40.500 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/PathAssembler.class
+23:54:40.500 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/PathAssembler.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/PathAssembler.class
+23:54:40.501 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/SystemPropertiesHandler.class
+23:54:40.501 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/SystemPropertiesHandler.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/SystemPropertiesHandler.class
+23:54:40.502 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/GradleWrapperMain.class
+23:54:40.502 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/GradleWrapperMain.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/GradleWrapperMain.class
+23:54:40.503 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Wrapper.class
+23:54:40.503 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Wrapper.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper/Wrapper.class
+23:54:40.504 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting META-INF/MANIFEST.MF
+23:54:40.508 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding META-INF/MANIFEST.MF to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/META-INF/MANIFEST.MF
+23:54:40.511 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/
+23:54:40.513 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle
+23:54:40.514 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting META-INF/
+23:54:40.515 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding META-INF/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/META-INF
+23:54:40.516 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/
+23:54:40.516 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test3/unjar/org/gradle/wrapper
+23:54:40.517 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expand complete
+23:54:40.583 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.SkipTaskExecuter - Starting to execute task ':taskname'
+23:54:40.584 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.t.ExecutionShortCircuitTaskExecuter - Determining if task ':taskname' is up-to-date
+23:54:40.588 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] INFO  o.g.a.i.c.DefaultTaskArtifactStateRepository - Executing task ':taskname' due to:
+Task ':taskname' has not declared any outputs.
+23:54:40.588 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.t.ExecutionShortCircuitTaskExecuter - task ':taskname' is not up-to-date
+23:54:40.589 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.DefaultTaskExecuter - Executing actions for task ':taskname'.
+23:54:40.592 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.tasks.SkipTaskExecuter - Finished executing task ':taskname'
+23:54:40.600 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Adding reference: ant.PropertyHelper
+23:54:40.600 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Detected Java version: 1.6 in: /System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+23:54:40.600 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Detected OS: Mac OS X
+23:54:40.603 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Adding reference: ant.ComponentHelper
+23:54:40.605 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - Project base dir set to: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper
+23:54:40.605 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] INFO  o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] Expanding: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/AbstractTaskTest/unknown-test28/jarPath/gradle-wrapper.jar into /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar
+23:54:40.615 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/IDownload.class
+23:54:40.615 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/IDownload.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/IDownload.class
+23:54:40.617 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/BootstrapMainStarter.class
+23:54:40.619 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/BootstrapMainStarter.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/BootstrapMainStarter.class
+23:54:40.621 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/
+23:54:40.621 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org
+23:54:40.623 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Download.class
+23:54:40.623 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Download.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/Download.class
+23:54:40.624 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Install.class
+23:54:40.634 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Install.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/Install.class
+23:54:40.634 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/PathAssembler.class
+23:54:40.635 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/PathAssembler.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/PathAssembler.class
+23:54:40.637 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/SystemPropertiesHandler.class
+23:54:40.638 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/SystemPropertiesHandler.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/SystemPropertiesHandler.class
+23:54:40.638 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/GradleWrapperMain.class
+23:54:40.639 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/GradleWrapperMain.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/GradleWrapperMain.class
+23:54:40.650 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/Wrapper.class
+23:54:40.651 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/Wrapper.class to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper/Wrapper.class
+23:54:40.653 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting META-INF/MANIFEST.MF
+23:54:40.654 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding META-INF/MANIFEST.MF to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/META-INF/MANIFEST.MF
+23:54:40.654 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/
+23:54:40.654 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle
+23:54:40.654 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting META-INF/
+23:54:40.654 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding META-INF/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/META-INF
+23:54:40.655 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] extracting org/gradle/wrapper/
+23:54:40.655 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expanding org/gradle/wrapper/ to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/WrapperTest/unknown-test4/unjar/org/gradle/wrapper
+23:54:40.655 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.p.ant.AntLoggingAdapter - [ant:null] expand complete
+23:54:41.890 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] WARN  org.gradle.util.DeprecationLogger - The Task.disableStandardOutputCapture() method is deprecated and will be removed in the next version of Gradle.
+23:54:41.904 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] WARN  org.gradle.util.DeprecationLogger - The Task.captureStandardOutput() method is deprecated and will be removed in the next version of Gradle. You should use the getLogging().captureStandardOutput() method instead.
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="1" name="DownloadTest" package="org.gradle.wrapper" tests="1" time="1.478" timestamp="2010-08-20T06:54:37">
+      <properties />
+
+      <testcase classname="org.gradle.wrapper.DownloadTest" name="testDownload" time="1.229" />
+
+      <system-out><![CDATA[
+23:54:38.633 [Outgoing Connection channel:tcp://localhost:52336!24 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/DownloadTest/testDownload
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="2" name="InstallTest" package="org.gradle.wrapper" tests="6" time="2.385" timestamp="2010-08-20T06:54:42">
+      <properties />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testInit" time="0.4" />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testCreateDist" time="0.809" />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testCreateDistWithExistingRoot" time="0.207" />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testCreateDistWithExistingDist" time="0.255" />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue" time="0.254" />
+
+      <testcase classname="org.gradle.wrapper.InstallTest" name="testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue" time="0.365" />
+
+      <system-out><![CDATA[23:54:42.683 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testInit
+Downloading file://./tmpTest/gradle-1.0-clf.zip
+      [zip] Building zip: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDist/zips/gradle-1.0-clf.zip.part
+Unzipping /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDist/zips/gradle-1.0-clf.zip to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDist/someDistPath
+Set executable permissions for: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDist/someDistPath/gradle-1.0/bin/gradle
+23:54:43.502 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDist
+Downloading file://./tmpTest/gradle-1.0-clf.zip
+      [zip] Building zip: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingRoot/zips/gradle-1.0-clf.zip.part
+Unzipping /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingRoot/zips/gradle-1.0-clf.zip to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingRoot/someDistPath
+Set executable permissions for: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingRoot/someDistPath/gradle-1.0/bin/gradle
+23:54:43.712 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingRoot
+23:54:43.969 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDist
+      [zip] Building zip: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue/zips/gradle-1.0-clf.zip.part
+Deleting directory /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue/someDistPath/gradle-1.0
+Unzipping /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue/zips/gradle-1.0-clf.zip to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue/someDistPath
+Set executable permissions for: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue/someDistPath/gradle-1.0/bin/gradle
+23:54:44.223 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingDistAndZipAndAlwaysUnpackTrue
+      [zip] Building zip: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue/zips/gradle-1.0-clf.zip.part
+Downloading file://./tmpTest/gradle-1.0-clf.zip
+      [zip] Building zip: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue/zips/gradle-1.0-clf.zip.part
+Unzipping /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue/zips/gradle-1.0-clf.zip to /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue/someDistPath
+Set executable permissions for: /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue/someDistPath/gradle-1.0/bin/gradle
+23:54:44.587 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/InstallTest/testCreateDistWithExistingZipAndDistAndAlwaysDownloadTrue
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="3" name="PathAssemblerTest" package="org.gradle.wrapper" tests="6" time="0.059" timestamp="2010-08-20T06:54:38">
+      <properties />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="gradleHomeWithGradleUserHomeBase" time="0.0010" />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="gradleHomeWithProjectBase" time="0.0" />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="gradleHomeWithUnknownBase" time="0.0" />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="distZipWithGradleUserHomeBase" time="0.0" />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="distZipWithProjectBase" time="0.014" />
+
+      <testcase classname="org.gradle.wrapper.PathAssemblerTest" name="distZipWithUnknownBase" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="4" name="SystemPropertiesHandlerTest" package="org.gradle.wrapper" tests="3" time="0.179" timestamp="2010-08-20T06:54:44">
+      <properties />
+
+      <testcase classname="org.gradle.wrapper.SystemPropertiesHandlerTest" name="parsesCommandLineProperties" time="0.035" />
+
+      <testcase classname="org.gradle.wrapper.SystemPropertiesHandlerTest" name="parsesPropertiesFile" time="0.014" />
+
+      <testcase classname="org.gradle.wrapper.SystemPropertiesHandlerTest" name="ifNoPropertyFileExistShouldReturnEmptyMap" time="0.0010" />
+
+      <system-out><![CDATA[23:54:44.757 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/SystemPropertiesHandlerTest/parsesCommandLineProperties
+23:54:44.769 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/SystemPropertiesHandlerTest/parsesPropertiesFile
+23:54:44.774 [Outgoing Connection channel:tcp://localhost:52336!23 Thread 3] DEBUG o.g.a.i.file.copy.DeleteActionImpl - Deleting /Users/krobinson6/Documents/groovy/gradle/subprojects/gradle-wrapper/build/tmp/tests/SystemPropertiesHandlerTest/ifNoPropertyFileExistShouldReturnEmptyMap
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kelly-robinsons-macbook-pro-2.local" id="5" name="WrapperTest" package="org.gradle.wrapper" tests="1" time="0.386" timestamp="2010-08-20T06:54:38">
+      <properties />
+
+      <testcase classname="org.gradle.wrapper.WrapperTest" name="execute" time="0.334" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

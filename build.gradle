@@ -1,0 +1,50 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'project-report'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy 'org.codehaus.groovy:groovy:1.7.5'
+    testCompile 'junit:junit:4.8.1'
+    testCompile 'org.hamcrest:hamcrest-all:1.1'
+    testCompile 'commons-lang:commons-lang:2.5'
+}
+
+task 'create' << {
+    file('src/main/groovy').mkdirs()
+    file('src/test/groovy').mkdirs()
+}
+
+tolerance = 2.0
+task findLongRunningTests(description:"find all tests that take over $tolerance seconds to run") {
+    String testDir = "${project.reportsDir}/test".toString()
+    file(testDir).mkdirs()
+    File file = file("$testDir/longRunningTests.txt")
+    file.createNewFile()
+    BufferedWriter writer = file.newWriter()
+    writer << parseTestResults('**/TESTS-TestSuites.xml', tolerance)
+    writer.close()
+}
+
+/**
+ * Read in xml files in the junit format and extract test names and times
+ * @includePattern ant pattern describing junit xml reports to inspect, recursively gathered from the rootDir
+ * @tolerance the number of seconds over which tests should be included in the report
+ */
+private String parseTestResults(includePattern, float tolerance)
+{
+    def resultMap = [:]
+    fileTree(dir: rootDir, include: includePattern).files.each {
+        def testResult = new XmlSlurper().parse(it)
+        testResult.depthFirst().findAll {it.name() == 'testcase'}.each { testcase ->
+            def key = [testcase.@classname.text(), testcase.@name.text()].join(':')
+            def value = testcase.@time.text() as float
+            resultMap[(key)] = value
+        }
+    }
+    return resultMap.sort {-it.value}.findAll {it.value > tolerance}.inspect()
+}
+
+
