@@ -1,0 +1,5 @@
+groovy-inspect-eval
+
+Quick demo of how to externalize data using the Groovy inspect() method to write out and Eval to read back in.
+
+author: Kelly Robinson
