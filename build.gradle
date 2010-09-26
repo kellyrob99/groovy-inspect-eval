@@ -18,7 +18,8 @@ task 'create' << {
 }
 
 tolerance = 2.0
-task findLongRunningTests(description:"find all tests that take over $tolerance seconds to run") {
+task findLongRunningTests << {
+    description= "find all tests that take over $tolerance seconds to run"
     String testDir = "${project.reportsDir}/test".toString()
     file(testDir).mkdirs()
     File file = file("$testDir/longRunningTests.txt")
