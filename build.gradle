@@ -45,7 +45,7 @@ private String parseTestResults(includePattern, float tolerance)
             resultMap[(key)] = value
         }
     }
-    return resultMap.sort {-it.value}.findAll {it.value > tolerance}.inspect()
+    return resultMap.findAll {it.value > tolerance}.sort {-it.value}.inspect()
 }
 
 
