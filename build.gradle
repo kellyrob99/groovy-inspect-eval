@@ -48,4 +48,8 @@ private String parseTestResults(includePattern, float tolerance)
     return resultMap.findAll {it.value > tolerance}.sort {-it.value}.inspect()
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-8'
+}
+
 
